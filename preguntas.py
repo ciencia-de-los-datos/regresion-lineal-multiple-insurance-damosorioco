@@ -82,6 +82,7 @@ def pregunta_03():
     from sklearn.pipeline import Pipeline
     from sklearn.model_selection import GridSearchCV
     from sklearn.linear_model import LinearRegression
+    from sklearn.feature_selection import f_regression
     
 
     pipeline = Pipeline(
@@ -119,7 +120,7 @@ def pregunta_03():
     # Defina un diccionario de parámetros para el GridSearchCV. Se deben
     # considerar valores desde 1 hasta 11 regresores para el modelo
     param_grid = {
-        'selectKBest_k': np(1, 11, 1),
+        'selectKBest__k': np(1, 11, 1),
     }
 
     # Defina una instancia de GridSearchCV con el pipeline y el diccionario de
