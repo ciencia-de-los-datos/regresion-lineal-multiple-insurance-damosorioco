@@ -97,7 +97,7 @@ def pregunta_03():
                         OneHotEncoder(),
                         make_column_selector(dtype_include=object),
                     ),
-                    remainder='passtrough',
+                    remainder='passthrough',
                 ),
             ),
             # Paso 2: Construya un selector de características que seleccione las K
